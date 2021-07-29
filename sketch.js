@@ -24,7 +24,7 @@ function setup() {
   background("#30303a");
   mycheck = createCheckbox("dynameic if checked", true);
   mycheck.position(cx,cy+height+20);
-  mylink = createA('https://github.com/greggelong/cfg-chinese', 'link to this  repo');
+  mylink = createA('https://github.com/greggelong/dynamicMondrian', 'link to this  repo');
   mylink.position(cx,cy+height+60);
 }
 
