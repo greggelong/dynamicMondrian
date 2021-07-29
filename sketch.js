@@ -22,7 +22,7 @@ function setup() {
   cy = (windowHeight - height) / 2;
   cnv.position(cx, cy);
   background("#30303a");
-  mycheck = createCheckbox("dynameic if checked", true);
+  mycheck = createCheckbox("dynamic if checked", true);
   mycheck.position(cx,cy+height+20);
   mylink = createA('https://github.com/greggelong/dynamicMondrian', 'link to this  repo');
   mylink.position(cx,cy+height+60);
