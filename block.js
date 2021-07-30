@@ -3,7 +3,7 @@ class Block {
   constructor(clr){
     this.clr =clr;
     // just a few random heights and widths to choose from
-    this.h = random([100,200, 50,]);
+    this.h = random([100,200, 50]);
     this.w = random([100,200,50]);
     this.x = random(width)-this.w;
     this.y = random(height)-this.h;
