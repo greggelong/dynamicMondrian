@@ -26,17 +26,17 @@ function setup() {
   mycheck.position(cx,cy+height+20);
   mylink = createA('https://github.com/greggelong/dynamicMondrian', 'link to this  repo');
   mylink.position(cx,cy+height+60);
-  for(let i =0;i<100;i++){
-     let newblock = new Block(color( "#f9f9f9"));
-      blocks.push(newblock);
-      print("bing",1);
+  // for(let i =0;i<100;i++){
+  //    let newblock = new Block(color( "#f9f9f9"));
+  //     blocks.push(newblock);
+  //     print("bing",1);
 
-  }
+  // }
 }
 
 function draw() {
   if (blocks.length > 0) {
-    background("#30303a");
+    background("#f9f9f9")//background("#30303a");
     for (let i = 0; i < blocks.length; i++) {
       blocks[i].edges();
       if (mycheck.checked()) {
