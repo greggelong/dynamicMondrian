@@ -29,6 +29,7 @@ function setup() {
   for(let i =0;i>50;i++){
      let newblock = new Block(color( "#f9f9f9"));
       blocks.push(newblock);
+      print("bing",1);
 
   }
 }
