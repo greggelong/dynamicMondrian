@@ -10,7 +10,7 @@ const clrs = [
   "#f9f9f9",   // Light Gray
   "#f9f9f9",   // Light Gray
 ];
-
+let lasttouch = 0; // for debouncing touch
 let blocks = [];
 let cnv, cx, xy;
 let mycheck;
@@ -47,9 +47,25 @@ function draw() {
   }
 }
 
-function mouseClicked() {
+function touchStarted() {
+  // for Ios
+  // calculate time since last touch
+  const currenttime = millis();
+  const timesincelasttouch = currenttime - lasttouch;
+
+  if (timesincelasttouch > 500) {
   print("cliked");
   let clr = random(clrs);
   let newblock = new Block(color(clr));
   blocks.push(newblock);
+
+  // update
+  lasttouch = currenttime;
+
+  }
+}
+
+function mousePressed(){
+  touchStarted();
+  // for firefox computer browsers
 }
