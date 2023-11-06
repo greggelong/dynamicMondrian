@@ -26,7 +26,7 @@ function setup() {
   mycheck.position(cx,cy+height+20);
   mylink = createA('https://github.com/greggelong/dynamicMondrian', 'link to this  repo');
   mylink.position(cx,cy+height+60);
-  for(let i =0;i>50;i++){
+  for(let i =0;i<100;i++){
      let newblock = new Block(color( "#f9f9f9"));
       blocks.push(newblock);
       print("bing",1);
